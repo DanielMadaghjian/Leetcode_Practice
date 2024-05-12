@@ -13,6 +13,10 @@ namespace leetcode_answers
         {
             // arrays and strings
             ArraysandStringsAnswers arraysandStringsAnswers = new ArraysandStringsAnswers();
+            int[] nums2 = [2];
+            int val2 = 3;
+            arraysandStringsAnswers.RemoveElement(nums2, val2);
+
 
         }
     }
