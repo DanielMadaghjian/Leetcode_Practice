@@ -69,6 +69,34 @@ namespace leetcode_answers
             //}
             //return length;
         }
+
+        public int MaxProfitTwo(int[] prices)
+        {
+            int maxProfit = 0;
+            int buyPointer = 0;
+            int sellPointer = 0;
+
+            for(int i =0;i<prices.Length; i++)
+            {
+                int price = prices[i];
+                // if the price drops, we sell and add the profit to our earnings. We then reset the sliding window. 
+                if (price < prices[sellPointer])
+                {
+                    maxProfit += prices[sellPointer] - prices[buyPointer];
+                    buyPointer = i;
+                    sellPointer = i;
+                }
+                else if(price > prices[sellPointer]) {
+                    sellPointer = i;
+                }
+            }
+            // check for remaining profits to be made
+            if(buyPointer != sellPointer)
+            {
+                maxProfit += prices[sellPointer] - prices[buyPointer];
+            }
+            return maxProfit; 
+        }
     }
 
    
