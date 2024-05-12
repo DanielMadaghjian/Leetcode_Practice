@@ -41,5 +41,16 @@ namespace LeetcodeTests
             Assert.That(answer.LengthOfLastWord(s3), Is.EqualTo(1));
 
         }
+        [Test]
+        public void TestMaxProfitTwo()
+        {
+            int[] prices1 = [7, 1, 5, 3, 6, 4];
+            int[] prices2 = [1, 2, 3, 4, 5];
+            int[] prices3 = [7, 6, 4, 3, 1];
+
+            Assert.That(answer.MaxProfitTwo(prices1), Is.EqualTo(7));
+            Assert.That(answer.MaxProfitTwo(prices2), Is.EqualTo(4));
+            Assert.That(answer.MaxProfitTwo(prices3), Is.EqualTo(0));
+        }
     }
 }
