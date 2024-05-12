@@ -1,0 +1,14 @@
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\bin\Debug\net6.0\leetcode_answers.exe
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\bin\Debug\net6.0\leetcode_answers.deps.json
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\bin\Debug\net6.0\leetcode_answers.runtimeconfig.json
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\bin\Debug\net6.0\leetcode_answers.dll
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\bin\Debug\net6.0\leetcode_answers.pdb
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.AssemblyInfoInputs.cache
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.AssemblyInfo.cs
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.csproj.CoreCompileInputs.cache
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.dll
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\refint\leetcode_answers.dll
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.pdb
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.genruntimeconfig.cache
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\ref\leetcode_answers.dll
