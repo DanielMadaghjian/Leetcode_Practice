@@ -63,7 +63,7 @@ namespace LeetcodeTests
 
             int[] gas2 = [2, 3, 4];
             int[] cost2 = [3, 4, 3];
-            Assert.That(answer.CanCompleteCircuit(gas1, cost1), Is.EqualTo(3));
+            Assert.That(answer.CanCompleteCircuit(gas1, cost1), Is.EqualTo(4));
             Assert.That(answer.CanCompleteCircuit(gas2, cost2), Is.EqualTo(-1));
 
         }
