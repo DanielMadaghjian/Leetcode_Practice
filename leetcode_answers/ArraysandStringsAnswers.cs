@@ -44,32 +44,33 @@ namespace leetcode_answers
 
         public int LengthOfLastWord(string s)
         {
-            string newString = s.Trim();
-            string[] strings = newString.Split(' ');
-            if (strings.Length == 0)
-            {
-                return 0;
-            }
-            return strings[strings.Length - 1].Length;
-
-            //int length = 0; 
-            //// get index of last letter
-            //int lastLetterIndex = s.Length - 1;
-            //while (s[lastLetterIndex] == ' ' && lastLetterIndex >=0)
+            //string newString = s.Trim();
+            //string[] strings = newString.Split(' ');
+            //if (strings.Length == 0)
             //{
-            //    lastLetterIndex--;
+            //    return 0;
             //}
-            //// find length of last word
-            //while (s[lastLetterIndex] != ' ' && lastLetterIndex >= 0) {
-            //    length++;
+            //return strings[strings.Length - 1].Length;
 
-            //    lastLetterIndex--;
-            //    if (lastLetterIndex < 0)
-            //    {
-            //        break;
-            //    }
-            //}
-            //return length;
+            int length = 0;
+            // get index of last letter
+            int lastLetterIndex = s.Length - 1;
+            while (s[lastLetterIndex] == ' ' && lastLetterIndex >= 0)
+            {
+                lastLetterIndex--;
+            }
+            // find length of last word
+            while (s[lastLetterIndex] != ' ' && lastLetterIndex >= 0)
+            {
+                length++;
+
+                lastLetterIndex--;
+                if (lastLetterIndex < 0)
+                {
+                    break;
+                }
+            }
+            return length;
         }
 
         public int MaxProfitTwo(int[] prices)
