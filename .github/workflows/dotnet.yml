@@ -24,6 +24,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./leetcode_answers/leetcode_answers.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./leetcode_answers/leetcode_answers.sln --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
