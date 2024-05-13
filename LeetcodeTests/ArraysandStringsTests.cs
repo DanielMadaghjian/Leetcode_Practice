@@ -1,5 +1,7 @@
 using leetcode_answers;
 using NUnit.Framework;
+using System.Diagnostics;
+
 namespace LeetcodeTests
 {
     public class ArraysAndStringsTests
@@ -51,6 +53,33 @@ namespace LeetcodeTests
             Assert.That(answer.MaxProfitTwo(prices1), Is.EqualTo(7));
             Assert.That(answer.MaxProfitTwo(prices2), Is.EqualTo(4));
             Assert.That(answer.MaxProfitTwo(prices3), Is.EqualTo(0));
+        }
+
+        [Test]
+        public void TestCanCompleteCircuit()
+        {
+            int[] gas1 = [1, 2, 3, 4, 5];
+            int[] cost1 = [3, 4, 5, 1, 2];
+
+            int[] gas2 = [2, 3, 4];
+            int[] cost2 = [3, 4, 3];
+            Assert.That(answer.CanCompleteCircuit(gas1, cost1), Is.EqualTo(3));
+            Assert.That(answer.CanCompleteCircuit(gas2, cost2), Is.EqualTo(-1));
+
+        }
+
+        [Test]
+        public void TestConvert()
+        {
+            string s1 = "PAYPALISHIRING";
+            int r1 = 3;
+
+            string s2 = "PAYPALISHIRING";
+            int r2 = 4;
+
+            Assert.That(answer.Convert(s1, r1), Is.EqualTo("PAHNAPLSIIGYIR"));
+            //Assert.That(answer.Convert(s2, r2), Is.EqualTo("PINALSIGYAHRPI"));
+
         }
     }
 }

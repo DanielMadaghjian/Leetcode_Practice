@@ -13,7 +13,7 @@ namespace leetcode_answers
         {
 
             int pointer = 0;
-            for(int i = 0; i < nums.Length; i++)
+            for (int i = 0; i < nums.Length; i++)
             {
                 if (nums[i] != val)
                 {
@@ -28,12 +28,14 @@ namespace leetcode_answers
         {
             int maxProfit = 0;
             int buyPointer = 0;
-            for(int i = 0;i < prices.Length;i++)
+            for (int i = 0; i < prices.Length; i++)
             {
-                if (prices[i] < prices[buyPointer]) {
+                if (prices[i] < prices[buyPointer])
+                {
                     buyPointer = i;
                 }
-                else if (prices[i] - prices[buyPointer] > maxProfit) {
+                else if (prices[i] - prices[buyPointer] > maxProfit)
+                {
                     maxProfit = prices[i] - prices[buyPointer];
                 }
             }
@@ -44,7 +46,7 @@ namespace leetcode_answers
         {
             string newString = s.Trim();
             string[] strings = newString.Split(' ');
-            if(strings.Length == 0)
+            if (strings.Length == 0)
             {
                 return 0;
             }
@@ -60,7 +62,7 @@ namespace leetcode_answers
             //// find length of last word
             //while (s[lastLetterIndex] != ' ' && lastLetterIndex >= 0) {
             //    length++;
-                
+
             //    lastLetterIndex--;
             //    if (lastLetterIndex < 0)
             //    {
@@ -76,7 +78,7 @@ namespace leetcode_answers
             int buyPointer = 0;
             int sellPointer = 0;
 
-            for(int i =0;i<prices.Length; i++)
+            for (int i = 0; i < prices.Length; i++)
             {
                 int price = prices[i];
                 // if the price drops, we sell and add the profit to our earnings. We then reset the sliding window. 
@@ -86,18 +88,56 @@ namespace leetcode_answers
                     buyPointer = i;
                     sellPointer = i;
                 }
-                else if(price > prices[sellPointer]) {
+                else if (price > prices[sellPointer])
+                {
                     sellPointer = i;
                 }
             }
             // check for remaining profits to be made
-            if(buyPointer != sellPointer)
+            if (buyPointer != sellPointer)
             {
                 maxProfit += prices[sellPointer] - prices[buyPointer];
             }
-            return maxProfit; 
+            return maxProfit;
         }
+
+        public int CanCompleteCircuit(int[] gas, int[] cost)
+        {
+            int sum = gas[^1] - cost[^1];
+            int maxIndex = gas.Length - 1;
+            int maxSum = sum;
+            for (int i = gas.Length - 2; i >= 0; i--)
+            {
+                sum += (gas[i] - cost[i]);
+                if (sum > maxSum)
+                {
+                    maxIndex = i;
+                    maxSum = sum;
+                }
+
+            }
+            if (sum < 0) return -1;
+            return maxIndex;
+        }
+
+        //public string Convert(string s, int numRows)
+        //{
+        //    int oddStep = (numRows * 2) - 2;
+        //    int evenStep = numRows
+        //    char[] chars = s.ToCharArray();
+        //    string result = "";
+        //    for(int i = 0; i < numRows; i++)
+        //    {
+        //        int index = i;
+        //        while(index < s.Length)
+        //        {
+        //            result += chars[index];
+        //            index += step;
+        //        }
+        //    }
+        //    return result;
+        //}
     }
 
-   
+
 }
