@@ -63,7 +63,7 @@ namespace LeetcodeTests
 
             int[] gas2 = [2, 3, 4];
             int[] cost2 = [3, 4, 3];
-            Assert.That(answer.CanCompleteCircuit(gas1, cost1), Is.EqualTo(4));
+            Assert.That(answer.CanCompleteCircuit(gas1, cost1), Is.EqualTo(3));
             Assert.That(answer.CanCompleteCircuit(gas2, cost2), Is.EqualTo(-1));
 
         }
@@ -77,9 +77,18 @@ namespace LeetcodeTests
             string s2 = "PAYPALISHIRING";
             int r2 = 4;
 
-            //Assert.That(answer.Convert(s1, r1), Is.EqualTo("PAHNAPLSIIGYIR"));
-            //Assert.That(answer.Convert(s2, r2), Is.EqualTo("PINALSIGYAHRPI"));
+            Assert.That(answer.Convert(s1, r1), Is.EqualTo("PAHNAPLSIIGYIR"));
+            Assert.That(answer.Convert(s2, r2), Is.EqualTo("PINALSIGYAHRPI"));
 
+        }
+
+        [Test]
+        public void TestStrStr()
+        {
+            string s1 = "a";
+            string s2 = "a";
+
+            Assert.That(answer.StrStr(s1, s2), Is.EqualTo(2));
         }
     }
 }

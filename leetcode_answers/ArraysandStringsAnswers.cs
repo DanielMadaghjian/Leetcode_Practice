@@ -127,23 +127,69 @@ namespace leetcode_answers
             return maxIndex;
         }
 
-        //public string Convert(string s, int numRows)
-        //{
-        //    int oddStep = (numRows * 2) - 2;
-        //    int evenStep = numRows
-        //    char[] chars = s.ToCharArray();
-        //    string result = "";
-        //    for(int i = 0; i < numRows; i++)
-        //    {
-        //        int index = i;
-        //        while(index < s.Length)
-        //        {
-        //            result += chars[index];
-        //            index += step;
-        //        }
-        //    }
-        //    return result;
-        //}
+        public string Convert(string s, int numRows)
+        {
+            // unchanged
+            if (numRows == 1) return s;
+
+            int step = (numRows * 2) - 2;
+            char[] chars = s.ToCharArray();
+            string result = "";
+
+            // add first row
+            int j = 0;
+            while(j < s.Length)
+            {
+                result += chars[j];
+                j += step;
+            }
+            
+            // add consective rows to result
+            for (int i = 1; i < numRows; i++)
+            {
+                int p1 = i;
+                int p2 = step - i;
+                while (p1 < s.Length)
+                {
+                    if (p1 == p2)
+                    {
+                        result += chars[p1];
+                    }
+                    else
+                    {
+                        if(p1 < s.Length)
+                        {
+                            result += chars[p1];
+                        }
+                        if(p2 < s.Length)
+                        {
+                            result += chars[p2];
+                        }
+                        
+                    }
+                    p1 += step;
+                    p2 += step;
+                }
+            }
+            return result;
+        }
+
+        public int StrStr(string haystack, string needle)
+        {
+            if (haystack.Length < needle.Length)
+            {
+                return -1;
+            }
+            for (int i = 0; i <= haystack.Length - needle.Length; i++)
+            {
+                string sub = haystack.Substring(i, needle.Length);
+                if (string.Equals(sub, needle))
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
     }
 
 
