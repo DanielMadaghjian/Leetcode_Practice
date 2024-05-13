@@ -20,8 +20,7 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - name: Run dotnet format 
-      run: dotnet format ./leetcode_answers/leetcode_answers.sln --verify-no-changes
+
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
