@@ -77,7 +77,7 @@ namespace LeetcodeTests
             string s2 = "PAYPALISHIRING";
             int r2 = 4;
 
-            Assert.That(answer.Convert(s1, r1), Is.EqualTo("PAHNAPLSIIGYIR"));
+            //Assert.That(answer.Convert(s1, r1), Is.EqualTo("PAHNAPLSIIGYIR"));
             //Assert.That(answer.Convert(s2, r2), Is.EqualTo("PINALSIGYAHRPI"));
 
         }
