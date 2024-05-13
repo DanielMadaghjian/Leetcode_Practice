@@ -93,6 +93,9 @@ namespace leetcode_answers
                 {
                     sellPointer = i;
                 }
+
+
+
             }
             // check for remaining profits to be made
             if (buyPointer != sellPointer)
@@ -100,6 +103,9 @@ namespace leetcode_answers
                 maxProfit += prices[sellPointer] - prices[buyPointer];
             }
             return maxProfit;
+
+
+
         }
 
         public int CanCompleteCircuit(int[] gas, int[] cost)
