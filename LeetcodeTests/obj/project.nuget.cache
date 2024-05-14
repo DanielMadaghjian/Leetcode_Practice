@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Wko9L3cHWoGZZK/APaj6t8OS15eSk/S5kfg2hAoSGeJHtqaSUvLg5G/4FOpwiuR1EnSbXq3ZXmG4BPSJr6Mgdw==",
+  "dgSpecHash": "yGoxYGsxAEEJWvDEenlsKJByJS3K1h+KUON+f/enSJMSknPloo4qLeqkeymHSGHHCUsQfzKKNhhass9jzIbJtQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Danie\\OneDrive\\OneDrive - Trinity College Dublin\\Desktop\\summer_prep\\coding\\LeetcodeRepo\\LeetcodeTests\\LeetcodeTests.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,9 @@
     "C:\\Users\\Danie\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
     "C:\\Users\\Danie\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
     "C:\\Users\\Danie\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\serilog.sinks.console\\5.0.1\\serilog.sinks.console.5.0.1.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\Danie\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Serilog;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -13,8 +14,10 @@ namespace leetcode_answers
         {
 
             int pointer = 0;
+            Log.Debug("Iterating through the array at {now}", DateTime.Now);
             for (int i = 0; i < nums.Length; i++)
             {
+                Log.Warning("array could be empty {now}", DateTime.Now);
                 if (nums[i] != val)
                 {
                     nums[pointer] = nums[i];
@@ -189,6 +192,93 @@ namespace leetcode_answers
                 }
             }
             return -1;
+        }
+
+        public int HIndex(int[] citations)
+        {
+            int[] sortedArrDesc = citations.OrderByDescending(c => c).ToArray();
+            int currentMaxH = 0;
+            int maxH = 0;
+            for(int i = 0; i <  sortedArrDesc.Length; i++)
+            {
+                int value = sortedArrDesc[i];
+                if(value >= i+1)
+                {
+                    currentMaxH++;
+                    if(currentMaxH > maxH)
+                    {
+                        maxH = currentMaxH;
+                    }
+                }
+                else
+                {
+                    currentMaxH = 0;
+                }
+            }
+            return maxH;
+        }
+
+        public Boolean IsPalindrome(string s)
+        {
+            string modifiedString = RemoveWhiteSpaces(s);
+            modifiedString = RemoveNonAlphaNum(modifiedString);
+            modifiedString = modifiedString.ToLower();
+            int p1 = 0;
+            int p2 = modifiedString.Length - 1;
+            while(p1 <= p2)
+            {
+                if (modifiedString[p1] != modifiedString[p2])
+                {
+                    return false;
+                }
+                p1++;
+                p2--;
+            }
+            return true;
+        }
+        public string RemoveNonAlphaNum(string input)
+        {
+            char[] arr = input.ToCharArray();
+
+            arr = Array.FindAll<char>(arr, (c => (char.IsLetterOrDigit(c)
+                                              || char.IsWhiteSpace(c)
+                                              || c == '-')));
+            return new string(arr);
+        }
+        public string RemoveWhiteSpaces(string input)
+        {
+            return new string(input.ToCharArray()
+                .Where(c => !Char.IsWhiteSpace(c))
+                .ToArray());
+        }
+        public int LengthOfLongestSubstring(string s)
+        {
+            HashSet<char> set = new HashSet<char>();
+            int maxLength = 0;
+            int currentLength = 0;
+            int startingIndex = 0;
+            int currentIndex = 0;
+            while(currentIndex < s.Length)
+            {
+                // if char is not duplicate
+                if (set.Add(s[currentIndex])){
+                    currentLength++;
+                    if(currentLength > maxLength)
+                    {
+                        maxLength = currentLength;
+                    }
+                    currentIndex++;
+                }
+                // if it is a duplicate -> reset 
+                else
+                {
+                    set.Clear();
+                    currentLength = 0;
+                    currentIndex = startingIndex;
+                    startingIndex++;
+                }
+            }
+            return maxLength;
         }
     }
 

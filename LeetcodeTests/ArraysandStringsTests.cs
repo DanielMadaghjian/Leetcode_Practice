@@ -88,7 +88,36 @@ namespace LeetcodeTests
             string s1 = "a";
             string s2 = "a";
 
-            Assert.That(answer.StrStr(s1, s2), Is.EqualTo(2));
+            Assert.That(answer.StrStr(s1, s2), Is.EqualTo(0));
+        }
+        [Test]
+        public void TestHIndex()
+        {
+            int[] arr1 = [3, 0, 6, 1, 5];
+            int[] arr2 = [1, 3, 1];
+
+            Assert.That(answer.HIndex(arr1), Is.EqualTo(3));
+            Assert.That(answer.HIndex(arr2), Is.EqualTo(1));
+        }
+        [Test]
+        public void TestPalindrome()
+        {
+            string s1 = "A man, a plan, a canal -- Panama";
+            string s2 = "race a car";
+            string s3 = " ";
+            //Assert.That(answer.IsPalindrome(s1), Is.True);
+            Assert.That(answer.IsPalindrome(s2), Is.False);
+            Assert.That(answer.IsPalindrome(s3), Is.True);
+        }
+        [Test]
+        public void TestLongestSubString()
+        {
+            string s1 = "abcabcbb";
+            string s2 = "bbbbb";
+            string s3 = "pwwkew";
+            Assert.That(answer.LengthOfLongestSubstring(s1), Is.EqualTo(3));
+            Assert.That(answer.LengthOfLongestSubstring(s2), Is.EqualTo(1));
+            Assert.That(answer.LengthOfLongestSubstring(s3), Is.EqualTo(3));
         }
     }
 }

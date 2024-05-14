@@ -12,3 +12,8 @@ C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\co
 C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.pdb
 C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.genruntimeconfig.cache
 C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\ref\leetcode_answers.dll
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\bin\Debug\net6.0\Serilog.dll
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.csproj.AssemblyReference.cache
+C:\Users\Danie\OneDrive\OneDrive - Trinity College Dublin\Desktop\summer_prep\coding\LeetcodeRepo\leetcode_answers\obj\Debug\net6.0\leetcode_answers.csproj.CopyComplete
